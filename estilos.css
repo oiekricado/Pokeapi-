@@ -1,0 +1,111 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #edf6f9;
+    
+}
+ #contenedor{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    justify-items: center;
+    
+}
+
+#contenedorpokemon{
+    z-index: 1;
+    margin-top: 100px;
+    border-radius: 50px;
+    background: #edf6f9;
+    box-shadow:  20px 20px 60px #c9d1d4,
+                -20px -20px 60px #ffffff;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    /* align-items: center;*/
+
+    
+}
+
+#imagen{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 200px;
+    border-radius: 50px;
+    z-index: 3;
+    
+
+   
+}
+
+#nombre_pokemon{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    color: #006d77;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#exp_pokemon{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 5px;
+    color: #006d77;
+    margin: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 60%;
+}
+#hp_pokemon{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: #006d77;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+    margin-right: 5px;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 60%;
+}
+
+#fondo{
+    background-color: #83c5be;
+    width: 500px;
+    height: 150px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-bottom: 50px;
+    z-index: 2;
+    border-radius: 50px 50px 0px 0px;
+
+}
+
+#botonact{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 100px;
+    border:none;
+    border-radius: 50px;
+    background: #83c5be;
+    box-shadow:  20px 20px 60px #c9d1d4,
+                -20px -20px 60px #ffffff;
+    background-image: url(refresh.svg);
+}
